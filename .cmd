@@ -9,6 +9,3 @@ git checkout nama_branch
 git add .
 git commit -m "nama_commit"
 git push -u origin nama_branch
-
-// habis itu hapus branch
-git branch -d nama_branch
