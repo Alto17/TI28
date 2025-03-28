@@ -3447,12 +3447,6 @@
       font-size: 0.625rem;
     }
   }
-  .bottom-0 {
-    bottom: calc(var(--spacing) * 0);
-  }
-  .left-0 {
-    left: calc(var(--spacing) * 0);
-  }
   .file-input {
     cursor: pointer;
     cursor: pointer;
@@ -4518,6 +4512,9 @@
     font-size: var(--text-xs);
     line-height: var(--tw-leading, var(--text-xs--line-height));
   }
+  .mt-auto {
+    margin-top: auto;
+  }
   .breadcrumbs {
     max-width: 100%;
     overflow-x: auto;
@@ -4590,6 +4587,9 @@
   }
   .mb-5 {
     margin-bottom: calc(var(--spacing) * 5);
+  }
+  .ml-12 {
+    margin-left: calc(var(--spacing) * 12);
   }
   .carousel-item {
     box-sizing: content-box;
@@ -5258,6 +5258,9 @@
       font-size: 0.6875rem;
     }
   }
+  .h-44 {
+    height: calc(var(--spacing) * 44);
+  }
   .h-screen {
     height: 100vh;
   }
@@ -5372,6 +5375,9 @@
   .w-1\/2 {
     width: calc(1/2 * 100%);
   }
+  .w-auto {
+    width: auto;
+  }
   .w-full {
     width: 100%;
   }
@@ -5389,9 +5395,6 @@
   }
   .min-w-screen {
     min-width: 100vw;
-  }
-  .flex-1 {
-    flex: 1;
   }
   .flex-auto {
     flex: auto;
@@ -5561,9 +5564,6 @@
       outline: 2px solid currentColor;
       outline-offset: 2px;
     }
-  }
-  .cursor-pointer {
-    cursor: pointer;
   }
   .touch-pinch-zoom {
     --tw-pinch-zoom: pinch-zoom;
