@@ -5,10 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./src/css/output.css" />
     <link rel="icon" href="./src/assets/28.png" />
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css'><link rel="stylesheet" href="./src/css/nav.css">
     <title>Twenty Eight</title>
   </head>
   <body>
     <!-- Navbar -->
+    <nav>
+      <div class="wrapper">
+        <div class="logo">
+          <a href="#">
+            <img src="./src/assets/28.png"  class="logo-img">
+          </a>
+        </div>
+        <input type="radio" name="slider" id="menu-btn">
+        <input type="radio" name="slider" id="close-btn">
+        <ul class="nav-links">
+          <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Anggota</a></li>
+          <li>
+            <a href="#" class="desktop-item">Dropdown Menu</a>
+            <input type="checkbox" id="showDrop">
+            <label for="showDrop" class="mobile-item">Foto menu</label>
+            <ul class="drop-menu">
+              <li><a href="#">Foto 1</a></li>
+              <li><a href="#">Foto 2</a></li>
+              <li><a href="#">Foto 3</a></li>
+              <li><a href="#">Foto 4</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="desktop-item">About</a>
+            <input type="checkbox" id="showMega">
+            <label for="showMega" class="mobile-item">About</label>
+            <div class="mega-box">
+              <div class="content">
+                <div class="row">
+                  <img src="./src/assets/umkt.jpg" alt="">
+                </div>
+                <div class="row">
+                  <header>UMKT</header>
+                  <ul class="mega-links">
+                    <li><a href="#">Profil</a></li>
+                    <li><a href="#">Master plan</a></li>
+                    <li><a href="#">Visi dan Misi</a></li>
+                    <li><a href="#">Program Studi</a></li>
+                  </ul>
+                </div>
+                <div class="row">
+                  <header>INFORMATIKA</header>
+                  <ul class="mega-links">
+                    <li><a href="#">Kelas</a></li>
+                    <li><a href="#">Mata Pelajaran</a></li>
+                  </ul>
+                </div>
+                <div class="row">
+                  <header>Materi</header>
+                  <ul class="mega-links">
+                    <li><a href="#">Frontend</a></li>
+                    <li><a href="#">Backend</a></li>
+                    <li><a href="#">Database</a></li>
+                    <li><a href="#">Cyber Security</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li><a href="#">Feedback</a></li>
+        </ul>
+        <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+      </div>
+    </nav>
     <!-- End Navbr -->
 
     <!-- Home Page -->
