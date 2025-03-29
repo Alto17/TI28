@@ -10,6 +10,9 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
     <link rel="stylesheet" href="./src/css/nav.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+
     <title>Twenty Eight</title>
   </head>
   <body
@@ -23,17 +26,14 @@
             <img src="./src/assets/28.png" class="logo-img" />
           </a>
         </div>
-        <input type="radio" name="slider" id="menu-btn" />
-        <input type="radio" name="slider" id="close-btn" />
         <ul class="nav-links">
           <label for="close-btn" class="btn close-btn"
             ><i class="fas fa-times"></i
           ></label>
           <li><a href="#">Home</a></li>
-          <li><a href="#">Anggota</a></li>
+          <li><a href="#">Ours</a></li>
           <li>
             <a href="#" class="desktop-item">Dropdown Menu</a>
-            <input type="checkbox" id="showDrop" />
             <label for="showDrop" class="mobile-item">Foto menu</label>
             <ul class="drop-menu">
               <li><a href="#">Foto 1</a></li>
@@ -44,7 +44,6 @@
           </li>
           <li>
             <a href="#" class="desktop-item">About</a>
-            <input type="checkbox" id="showMega" />
             <label for="showMega" class="mobile-item">About</label>
             <div class="mega-box">
               <div class="content">
@@ -100,14 +99,10 @@
       <div class="hero-overlay"></div>
       <div class="hero-content text-neutral-content text-center">
         <div class="max-w-md">
-          <h1 class="mb-5 text-5xl font-bold">SELAMAT DATANG</h1>
-          <p class="mb-5">
-            Website ini berisi infromasi mengenai <br />
-            Anggota kelompok 28
+          <h1 class="mb-5 text-5xl font-bold" style="font-family: 'Poppins', sans-serif;">Welcome to Our Website</h1>
+          <p class="mb-5" style="font-family: 'Poppins', sans-serif;">
+            This is our space to share memories, photos, and everything about us. From fun moments to important milestones, it’s all <a href="#" class="font-bold text-white underline dark:text-white hover:no-underline" style="font-family: 'Poppins', sans-serif;">here</a>.
           </p>
-          <button class="btn bg-white text-black border-[#e5e5e5]">
-            Get Started
-          </button>
         </div>
       </div>
     </div>
@@ -140,7 +135,7 @@
         <p>
           ACME Industries Ltd.
           <br />
-          Providing reliable tech since 1992
+          Providing Reliable Tech Since 1992
         </p>
       </aside>
       <nav>
@@ -189,7 +184,6 @@
       </nav>
     </footer>
     <!-- End Footer -->
-
     <script src="script.js"></script>
   </body>
 </html>
