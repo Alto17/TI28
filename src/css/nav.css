@@ -10,10 +10,10 @@
   z-index: 99;
   width: 100%;
 
-  background: #242526;
+  background: transparent;
 }
 nav .wrapper {
-  position:absolute;
+  position:static;
   max-width: 1300px;
   padding: 0px 30px;
   height: 70px;
