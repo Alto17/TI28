@@ -9,8 +9,14 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
@@ -21,103 +27,179 @@
       integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
       crossorigin="anonymous"
     />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
-<script src="https://unpkg.com/@material-tailwind/html@latest/scripts/ripple.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+    <script src="https://unpkg.com/@material-tailwind/html@latest/scripts/ripple.js"></script>
 
     <title>Twenty Eight</title>
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="absolute top-0 left-0 w-full bg-accent-content border-none z-10 font-[Poppins]">
+    <nav
+      class="absolute top-0 left-0 w-full bg-accent-content border-none z-10 font-[Poppins]"
+    >
       <div class="w-full flex items-center p-4">
-        
         <!-- === LEFT SIDE: Logo and Menu === -->
         <div class="flex items-center gap-8">
-          
           <!-- LOGO -->
           <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
             <img src="src/assets/28.png" class="h-10" alt="Logo" />
           </a>
-    
+
           <!-- MENU TOGGLE BUTTON (For Mobile) -->
-          <button data-collapse-toggle="navbar-multi-level" type="button" 
-            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden 
-            hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 
-            dark:hover:bg-gray-700 dark:focus:ring-gray-600" 
-            aria-controls="navbar-multi-level" aria-expanded="false">
+          <button
+            data-collapse-toggle="navbar-multi-level"
+            type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-multi-level"
+            aria-expanded="false"
+          >
             <span class="sr-only">Open main menu</span>
-            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+            <svg
+              class="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
             </svg>
           </button>
-    
+
           <!-- MENU ITEMS -->
           <div class="hidden w-full md:block md:w-auto" id="navbar-multi-level">
-            <ul class="flex flex-col md:flex-row font-medium p-4 md:p-0 mt-4 border border-transparent 
-              bg-transparent md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-transparent dark:bg-gray-800 
-              md:dark:bg-gray-900 dark:border-gray-700">
-    
+            <ul
+              class="flex flex-col md:flex-row font-medium p-4 md:p-0 mt-4 border border-transparent bg-transparent md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+            >
               <!-- HOME -->
               <li>
-                <a href="#" class=" font-bold block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent 
-                  md:text-blue-700 md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent" 
-                  aria-current="page">Home</a>
+                <a
+                  href="#"
+                  class="font-bold block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent"
+                  aria-current="page"
+                  >Home</a
+                >
               </li>
-    
+
               <!-- DROPDOWN MENU -->
               <li>
-                <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" 
-                  class="font-bold flex items-center justify-between w-full py-2 px-3 text-white hover:bg-gray-100 
-                  md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white 
-                  md:dark:hover:text-blue-500 dark:focus:text-white dark:hover:bg-gray-700 md:dark:hover:bg-transparent">
-                  Dropdown 
-                  <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                <button
+                  id="dropdownNavbarLink"
+                  data-dropdown-toggle="dropdownNavbar"
+                  class="font-bold flex items-center justify-between w-full py-2 px-3 text-white hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
+                >
+                  Dropdown
+                  <svg
+                    class="w-2.5 h-2.5 ms-2.5"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 10 6"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m1 1 4 4 4-4"
+                    />
                   </svg>
                 </button>
-    
+
                 <!-- DROPDOWN CONTENT -->
-                <div id="dropdownNavbar" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600">
+                <div
+                  id="dropdownNavbar"
+                  class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600"
+                >
                   <ul class="py-2 text-sm text-gray-700 dark:text-gray-200">
-                    <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a></li>
-                    <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a></li>
+                    <li>
+                      <a
+                        href="#"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >Dashboard</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >Earnings</a
+                      >
+                    </li>
                   </ul>
                   <div class="py-1">
-                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign out</a>
+                    <a
+                      href="#"
+                      class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                      >Sign out</a
+                    >
                   </div>
                 </div>
               </li>
-    
+
               <!-- SERVICES -->
               <li>
-                <a href="#" class="font-bold block py-2 px-3 text-white md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Services</a>
+                <a
+                  href="#"
+                  class="font-bold block py-2 px-3 text-white md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >Services</a
+                >
               </li>
-    
+
               <!-- PRICING -->
               <li>
-                <a href="#" class="font-bold block py-2 px-3 text-white hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Pricing</a>
+                <a
+                  href="#"
+                  class="font-bold block py-2 px-3 text-white hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >Pricing</a
+                >
               </li>
-    
+
               <!-- CONTACT -->
               <li>
-                <a href="#" class="font-bold block py-2 px-3 text-white hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+                <a
+                  href="#"
+                  class="font-bold block py-2 px-3 text-white hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >Contact</a
+                >
               </li>
-    
             </ul>
           </div>
         </div>
-    
+
         <!-- === RIGHT SIDE: SEARCH BAR === -->
         <div class="absolute right-0">
-          <input type="search" id="default-search" placeholder="..." class="bg-transparent border p-2 rounded-md">
-          <button type="submit" class="font-bold bg-neutral text-white p-2 rounded-md">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">
-              <path fill-rule="evenodd" d="M10.5 3.75a6.75 6.75 0 1 0 0 13.5 6.75 6.75 0 0 0 0-13.5ZM2.25 10.5a8.25 8.25 0 1 1 14.59 5.28l4.69 4.69a.75.75 0 1 1-1.06 1.06l-4.69-4.69A8.25 8.25 0 0 1 2.25 10.5Z" clip-rule="evenodd"/>
+          <input
+            type="search"
+            id="default-search"
+            placeholder="..."
+            class="bg-transparent border p-2 rounded-md"
+          />
+          <button
+            type="submit"
+            class="font-bold bg-neutral text-white p-2 rounded-md"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="w-5 h-5"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10.5 3.75a6.75 6.75 0 1 0 0 13.5 6.75 6.75 0 0 0 0-13.5ZM2.25 10.5a8.25 8.25 0 1 1 14.59 5.28l4.69 4.69a.75.75 0 1 1-1.06 1.06l-4.69-4.69A8.25 8.25 0 0 1 2.25 10.5Z"
+                clip-rule="evenodd"
+              />
             </svg>
           </button>
         </div>
       </div>
-    </nav>    
+    </nav>
     <!-- End Navbr -->
 
     <!-- Home Page -->
@@ -128,101 +210,240 @@
       <div class="hero-overlay"></div>
       <div class="hero-content text-neutral-content text-center">
         <div class="max-w-md">
-          <h1 class="mb-5 text-5xl font-bold" style="font-family: 'Poppins', sans-serif;">Welcome 28 Website</h1>
-          <p class="mb-5" style="font-family: 'Poppins', sans-serif;">
-            This is our space to share memories, photos, and everything about us. From fun moments to important milestones, it’s all <a class="menu__link" href="#">here</a>.
+          <h1
+            class="mb-5 text-5xl font-bold"
+            style="font-family: 'Poppins', sans-serif"
+          >
+            Welcome 28 Website
+          </h1>
+          <p class="mb-5" style="font-family: 'Poppins', sans-serif">
+            This is our space to share memories, photos, and everything about
+            us. From fun moments to important milestones, it’s all
+            <a class="menu__link" href="#">here</a>.
           </p>
         </div>
       </div>
     </div>
-      <!--Blog Update-->
+    <!--Blog Update-->
     <section class="py-12 px-6 text-center">
       <h2 class="text-3xl font-bold text-white mb-6">Our Latest</h2>
-      
+
       <div class="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-          <!-- Blog Card 1 -->
-          <div class="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-xl transition">
-              <img src="src/assets/umkt logo.png" alt="Blog Post 1" class="w-full h-48 object-cover">
-              <div class="p-5">
-                  <h3 class="text-lg font-semibold text-gray-800">Exploring the City</h3>
-                  <p class="text-gray-600 text-sm mt-2">We visited some amazing places and had a great time! Read more...</p>
-                  <!-- From Uiverse.io by Matilemak --> 
-                  <button class="animated-button">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="arr-2" viewBox="0 0 24 24">
-                      <path
-                        d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
-                      ></path>
-                    </svg>
-                    <span class="text">Read More</span>
-                    <span class="circle"></span>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="arr-1" viewBox="0 0 24 24">
-                      <path
-                        d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
-                      ></path>
-                    </svg>
-                  </button>
-
-              </div>
+        <!-- Blog Card 1 -->
+        <div
+          class="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-xl transition"
+        >
+          <img
+            src="src/assets/umkt logo.png"
+            alt="Blog Post 1"
+            class="w-full h-48 object-cover"
+          />
+          <div class="p-5">
+            <h3 class="text-lg font-semibold text-gray-800">
+              Exploring the City
+            </h3>
+            <p class="text-gray-600 text-sm mt-2">
+              We visited some amazing places and had a great time! Read more...
+            </p>
+            <!-- From Uiverse.io by Matilemak -->
+            <button class="animated-button">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="arr-2"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                ></path>
+              </svg>
+              <span class="text">Read More</span>
+              <span class="circle"></span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="arr-1"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                ></path>
+              </svg>
+            </button>
           </div>
+        </div>
 
-          <!-- Blog Card 2 -->
-          <div class="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-xl transition">
-              <img src="src/assets/umkt logo.png" alt="Blog Post 2" class="w-full h-48 object-cover">
-              <div class="p-5">
-                  <h3 class="text-lg font-semibold text-gray-800">Our Website Journey</h3>
-                  <p class="text-gray-600 text-sm mt-2">How we built this site from scratch and what we learned!</p>
-                  <button class="animated-button">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="arr-2" viewBox="0 0 24 24">
-                      <path
-                        d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
-                      ></path>
-                    </svg>
-                    <span class="text">Read More</span>
-                    <span class="circle"></span>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="arr-1" viewBox="0 0 24 24">
-                      <path
-                        d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
-                      ></path>
-                    </svg>
-                  </button>
-              </div>
+        <!-- Blog Card 2 -->
+        <div
+          class="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-xl transition"
+        >
+          <img
+            src="src/assets/umkt logo.png"
+            alt="Blog Post 2"
+            class="w-full h-48 object-cover"
+          />
+          <div class="p-5">
+            <h3 class="text-lg font-semibold text-gray-800">
+              Our Website Journey
+            </h3>
+            <p class="text-gray-600 text-sm mt-2">
+              How we built this site from scratch and what we learned!
+            </p>
+            <button class="animated-button">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="arr-2"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                ></path>
+              </svg>
+              <span class="text">Read More</span>
+              <span class="circle"></span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="arr-1"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                ></path>
+              </svg>
+            </button>
           </div>
+        </div>
 
-          <!-- Blog Card 3 -->
-          <div class="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-xl transition">
-              <img src="src/assets/umkt logo.png" alt="Blog Post 3" class="w-full h-48 object-cover">
-              <div class="p-5">
-                  <h3 class="text-lg font-semibold text-gray-800">How We Meet</h3>
-                  <p class="text-gray-600 text-sm mt-2">A fun day out with the gang! Here’s what happened...</p>
-                  <button class="animated-button">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="arr-2" viewBox="0 0 24 24">
-                      <path
-                        d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
-                      ></path>
-                    </svg>
-                    <span class="text">Read More</span>
-                    <span class="circle"></span>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="arr-1" viewBox="0 0 24 24">
-                      <path
-                        d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
-                      ></path>
-                    </svg>
-                  </button>
-              </div>
+        <!-- Blog Card 3 -->
+        <div
+          class="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-xl transition"
+        >
+          <img
+            src="src/assets/umkt logo.png"
+            alt="Blog Post 3"
+            class="w-full h-48 object-cover"
+          />
+          <div class="p-5">
+            <h3 class="text-lg font-semibold text-gray-800">How We Meet</h3>
+            <p class="text-gray-600 text-sm mt-2">
+              A fun day out with the gang! Here’s what happened...
+            </p>
+            <button class="animated-button">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="arr-2"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                ></path>
+              </svg>
+              <span class="text">Read More</span>
+              <span class="circle"></span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="arr-1"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                ></path>
+              </svg>
+            </button>
           </div>
+        </div>
       </div>
-  </section>
+    </section>
     <!-- End Home Page -->
 
     <!-- About Page -->
-     <div class="h-screen">
-      <h1>anjai</h1>
-     </div>
+    <div class="min-h-screen flex flex-col items-center justify-start p-6">
+      <h1 class="text-3xl font-semibold text-center mb-6">About us</h1>
+
+      <div class="flex flex-col md:flex-row w-full max-w-6xl gap-6">
+        <!-- Carousel di kiri -->
+        <div class="md:w-1/2 md:h-28 h-full w-full">
+          <div class="carousel w-full h-[400px] rounded-md">
+            <div id="slide1" class="carousel-item relative w-full">
+              <img
+                src="/src/assets/aik.jpg"
+                class="w-full h-full object-cover object-center"
+              />
+              <div
+                class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+              >
+                <a href="#slide4" class="btn btn-circle">❮</a>
+                <a href="#slide2" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+            <div id="slide2" class="carousel-item relative w-full">
+              <img
+                src="/src/assets/orgpdh.jpg"
+                class="w-full h-full object-cover object-center"
+              />
+              <div
+                class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+              >
+                <a href="#slide1" class="btn btn-circle">❮</a>
+                <a href="#slide3" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+            <div id="slide3" class="carousel-item relative w-full">
+              <img
+                src="/src/assets/awalmasta.jpg"
+                class="w-full h-full object-cover object-center"
+              />
+              <div
+                class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+              >
+                <a href="#slide2" class="btn btn-circle">❮</a>
+                <a href="#slide4" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+            <div id="slide4" class="carousel-item relative w-full">
+              <img
+                src="/src/assets/aiklama.jpg"
+                class="w-full h-full object-cover object-center"
+              />
+              <div
+                class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+              >
+                <a href="#slide3" class="btn btn-circle">❮</a>
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Paragraf di kanan -->
+        <div class="md:w-1/2 w-full flex items-center">
+          <p class="text-lg text-justify leading-relaxed">
+            We’re not just a group of friends—we’re a bunch of weird, loud,
+            thoughtful, chaotic (but lovable) souls who somehow clicked and
+            created a bond that feels more like family. It all started from
+            casual hangouts, random conversations, and unexpected moments that
+            turned into unforgettable memories. Over time, we realized that this
+            friendship isn’t just about having fun (though we’re really good at
+            that), but also about growing together. We’ve been there for each
+            other—through the fun stuff, the tough times, the late-night calls,
+            the random trips, and even the silent moments when words weren’t
+            needed. This website is our little digital home. A space where we
+            can keep our stories, inside jokes, photos, silly plans, and maybe
+            even share a bit of our journey with the world. It’s not fancy, but
+            it’s real—just like us. We believe that genuine friendships don’t
+            need to be loud all the time. They show up quietly, stay
+            consistently, and grow naturally. And that’s exactly what we have
+            here. Whether we’re near or far, talking every day or once in a
+            while, this circle stays solid. So, welcome to our world. It’s
+            messy, fun, real, and full of love. And if you're reading this,
+            maybe you're part of the story too.
+          </p>
+        </div>
+      </div>
+    </div>
+
     <!-- End About Page -->
 
     <!-- Gallery Page -->
     <h3 class="text-3xl font-bold text-white mb-6">Gallery Pages</h3>
-
 
     <div class="gallery" id="gallery">
       <!-- Contoh gambar awal -->
@@ -257,6 +478,10 @@
       <div class="gallery-item">
         <img src="src/assets/28.png" alt="Sample" />
         <div class="caption">Logo</div>
+      </div>
+      <div class="gallery-item">
+        <img src="src/assets/vino.jpg" alt="Sample" />
+        <div class="caption">HJ Vino, LC.</div>
       </div>
     </div>
     <!-- End Gallery Page -->
